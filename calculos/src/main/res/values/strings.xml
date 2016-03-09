@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cálculos</string>
+    <string name="nro1">Nro. 1</string>
+    <string name="nro2">Nro. 2</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Resultado</string>
+    <string name="etiqueta">Univesidad de Antioquia - Calculadora Básica</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multi">Multiplicación</string>
+    <string name="division">División</string>
+</resources>

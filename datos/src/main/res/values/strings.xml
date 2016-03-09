@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Personal Information</string>
+    <string name="loggin">Loggin</string>
+    <string name="password">Password</string>
+    <string name="repetirPass">Repit Password</string>
+    <string name="email">E-mail</string>
+    <string name="sex1">Female</string>
+    <string name="sex2">Male</string>
+    <string name="futbol">Soccer</string>
+    <string name="cine">Cine</string>
+    <string name="tv">TV</string>
+    <string name="leer">Reading</string>
+    <string name="sexo">Sex</string>
+    <string name="nacimiento">Brithday</string>
+</resources>

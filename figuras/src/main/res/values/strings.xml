@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Figuras Geométricas</string>
+    <string name="cuadro">Cuadrado</string>
+    <string name="triangulo">Triángulo</string>
+    <string name="rectangulo">Rectángulo</string>
+    <string name="circulo">Círculo</string>
+    <string name="nom1">Figuras Geométricas</string>
+    <string name="nombre">Cálculo de Áreas</string>
+    <string name="seleccion">Seleccione una opción:</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Área:</string>
+
+</resources>

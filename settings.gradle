@@ -1,0 +1,1 @@
+include ':app', ':calculos', ':figuras', ':datos'
