@@ -12,4 +12,46 @@
     <string name="leer">Reading</string>
     <string name="sexo">Sex</string>
     <string name="nacimiento">Brithday</string>
+    <string name="date">Date</string>
+    <string name="fecha">...</string>
+    <string name="ciudad">Ciudad</string>
+
+
+    <string-array name="ciudades">
+
+        <item>Arauca</item>
+        <item>Armenia</item>
+        <item>Leticia</item>
+        <item>Medellín</item>
+        <item>B/quilla</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Manizales</item>
+        <item>Yopal</item>
+        <item>Popayán</item>
+        <item>Florencia</item>
+        <item>Valledupar</item>
+        <item>Montería</item>
+        <item>Quibdó</item>
+        <item>Bogotá</item>
+        <item>San José</item>
+        <item>Inírida</item>
+        <item>Neiva</item>
+        <item>Riohacha</item>
+        <item>Villavicencio</item>
+        <item>Sta Marta</item>
+        <item>Pasto</item>
+        <item>Cúcuta</item>
+        <item>Mocoa</item>
+        <item>Pereira</item>
+        <item>San Andrés</item>
+        <item>B/manga</item>
+        <item>Sincelejo</item>
+        <item>Ibagué</item>
+        <item>Mitú</item>
+        <item>Pto Carreño</item>
+        <item>Cali</item>
+
+
+    </string-array>
 </resources>
