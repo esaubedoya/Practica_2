@@ -5,10 +5,14 @@ import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
 import java.util.Calendar;
 
 
@@ -39,7 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
         tDateDisplay = (TextView) findViewById(R.id.dateDisplay);
         bPickDate = (Button) findViewById(R.id.pickDate);
-        // add a click listener to the button
+        final EditText eName=(EditText) findViewById(R.id.eName);
+        final EditText ePw=(EditText) findViewById(R.id.ePw);
+        final EditText eRpw=(EditText) findViewById(R.id.eRpw);
+        final EditText eEmail=(EditText)findViewById(R.id.eEmail);
+        final Spinner sCiudad=(Spinner)findViewById(R.id.sCiudad);
+
+
+
         bPickDate.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
@@ -54,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
         day = c.get(Calendar.DAY_OF_MONTH);
         // display the current date (this method is below)
         updateDisplay();
+
+        ArrayAdapter adapter=ArrayAdapter.createFromResource(this,R.array.ciudades,R.layout.support_simple_spinner_dropdown_item);
+        sCiudad.setAdapter(adapter);
     }
 
     private void updateDisplay() {
