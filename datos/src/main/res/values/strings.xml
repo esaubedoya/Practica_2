@@ -14,7 +14,8 @@
     <string name="nacimiento">Brithday</string>
     <string name="date">Date</string>
     <string name="fecha">...</string>
-    <string name="ciudad">Ciudad</string>
+    <string name="ciudad">City</string>
+    <string name="hobbies">Hobbies:</string>
 
 
     <string-array name="ciudades">

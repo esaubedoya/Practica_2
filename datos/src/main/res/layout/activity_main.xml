@@ -31,7 +31,8 @@
                 android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:textSize="12dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:id="@+id/eName"/>
 
         </LinearLayout>
         <LinearLayout
@@ -50,7 +51,8 @@
                 android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
-                android:textSize="12dp"/>
+                android:textSize="12dp"
+                android:id="@+id/ePw"/>
 
         </LinearLayout>
 
@@ -70,7 +72,8 @@
                 android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
-                android:textSize="12dp"/>
+                android:textSize="12dp"
+                android:id="@+id/eRpw"/>
 
         </LinearLayout>
 
@@ -91,7 +94,8 @@
                 android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress"
-                android:textSize="12dp"/>
+                android:textSize="12dp"
+                android:id="@+id/eEmail"/>
 
         </LinearLayout>
 
@@ -119,12 +123,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/sex1"
-                android:textSize="12dp" />
+                android:textSize="12dp"
+                android:id="@+id/rFemale"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/sex2"
-                android:textSize="12dp"/>
+                android:textSize="12dp"
+                android:id="@+id/rMale"/>
 
         </RadioGroup>
 
@@ -189,7 +195,6 @@
                 android:textSize="16dp"/>
 
 
-
         </LinearLayout>
 
     </LinearLayout>
@@ -198,6 +203,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hobbies"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cine"
+            android:textSize="16dp"
+            android:id="@+id/cCine"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/futbol"
+            android:textSize="16dp"
+            android:id="@+id/cFutbol"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/leer"
+            android:id="@+id/cLeer"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv"
+            android:textSize="16dp"
+            android:id="@+id/cTv"/>
 
     </LinearLayout>
 
