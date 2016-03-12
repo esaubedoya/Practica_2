@@ -2,7 +2,7 @@
     <string name="app_name">Personal Information</string>
     <string name="loggin">Loggin</string>
     <string name="password">Password</string>
-    <string name="repetirPass">Repit Password</string>
+    <string name="repetirPass">Repeat Password</string>
     <string name="email">E-mail</string>
     <string name="sex1">Female</string>
     <string name="sex2">Male</string>
