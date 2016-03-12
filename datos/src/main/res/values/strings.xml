@@ -16,6 +16,8 @@
     <string name="fecha">...</string>
     <string name="ciudad">City</string>
     <string name="hobbies">Hobbies:</string>
+    <string name="enviar">Send</string>
+    <string name="limpiar">Clear</string>
 
 
     <string-array name="ciudades">

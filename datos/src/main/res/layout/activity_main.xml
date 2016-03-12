@@ -12,7 +12,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
         android:orientation="vertical">
 
         <LinearLayout
@@ -24,7 +25,7 @@
                 android:layout_weight="0.40"
                 android:layout_height="match_parent"
                 android:text="@string/loggin"
-                android:textSize="16dp"
+                android:textSize="12dp"
                 android:textStyle="bold"/>
             <EditText
                 android:layout_width="0dp"
@@ -44,7 +45,7 @@
                 android:layout_weight="0.4"
                 android:layout_height="match_parent"
                 android:text="@string/password"
-                android:textSize="16dp"
+                android:textSize="12dp"
                 android:textStyle="bold"/>
             <EditText
                 android:layout_width="0dp"
@@ -65,7 +66,7 @@
                 android:layout_weight="0.4"
                 android:layout_height="match_parent"
                 android:text="@string/repetirPass"
-                android:textSize="16dp"
+                android:textSize="12dp"
                 android:textStyle="bold"/>
             <EditText
                 android:layout_width="0dp"
@@ -87,7 +88,7 @@
                 android:layout_weight="0.4"
                 android:layout_height="match_parent"
                 android:text="@string/email"
-                android:textSize="16dp"
+                android:textSize="12dp"
                 android:textStyle="bold"/>
             <EditText
                 android:layout_width="0dp"
@@ -103,7 +104,8 @@
 |
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
         android:orientation="horizontal">
 
         <TextView
@@ -112,7 +114,7 @@
             android:layout_height="match_parent"
             android:text="@string/sexo"
             android:textStyle="bold"
-            android:textSize="16dp"/>
+            android:textSize="12dp"/>
         <RadioGroup
             android:layout_width="0dp"
             android:layout_weight="2"
@@ -124,13 +126,15 @@
                 android:layout_height="match_parent"
                 android:text="@string/sex1"
                 android:textSize="12dp"
-                android:id="@+id/rFemale"/>
+                android:id="@+id/rFemale"
+                android:onClick="onRadioButtonClicked"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/sex2"
                 android:textSize="12dp"
-                android:id="@+id/rMale"/>
+                android:id="@+id/rMale"
+                android:onClick="onRadioButtonClicked"/>
 
         </RadioGroup>
 
@@ -138,7 +142,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
         android:orientation="vertical">
 
         <LinearLayout
@@ -150,7 +155,7 @@
                 android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text="@string/nacimiento"
-                android:textSize="16dp"
+                android:textSize="12dp"
                 android:textStyle="bold"/>
 
 
@@ -164,21 +169,20 @@
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/date"
-                android:textSize="16dp"/>
+                android:textSize="12dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text=""
-                android:textSize="16dp"
+                android:textSize="12dp"
                 android:id="@+id/dateDisplay"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/fecha"
-                android:id="@+id/pickDate"
-                android:background="@drawable/iconcalendar"/>
+                android:id="@+id/pickDate"/>
 
 
         </LinearLayout>
@@ -192,7 +196,7 @@
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/ciudad"
-                android:textSize="16dp"/>
+                android:textSize="12dp"/>
 
             <Spinner
                 android:layout_width="0dp"
@@ -207,45 +211,88 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/hobbies"
-            android:textSize="16dp"
+            android:textSize="12dp"
             android:textStyle="bold"/>
-        <CheckBox
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cine"
-            android:textSize="16dp"
-            android:id="@+id/cCine"/>
-        <CheckBox
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/cine"
+                android:textSize="12dp"
+                android:id="@+id/cCine"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/futbol"
+                android:textSize="12dp"
+                android:id="@+id/cFutbol"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/enviar"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/bEnviar"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/futbol"
-            android:textSize="16dp"
-            android:id="@+id/cFutbol"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/leer"
-            android:id="@+id/cLeer"/>
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tv"
-            android:textSize="16dp"
-            android:id="@+id/cTv"/>
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/leer"
+                android:id="@+id/cLeer"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/tv"
+                android:textSize="12dp"
+                android:id="@+id/cTv"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/limpiar"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/bLimpiar"
+                android:layout_gravity="right"/>
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
         android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tResultado"/>
 
     </LinearLayout>
 
